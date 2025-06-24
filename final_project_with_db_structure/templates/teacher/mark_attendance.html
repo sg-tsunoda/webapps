@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Mark Attendance</h2>
+        <form method="POST" action="/teacher/mark_attendance">
+            <label>Student 1 <input type="checkbox" name="present[]" value="1"></label><br>
+            <label>Student 2 <input type="checkbox" name="present[]" value="2"></label><br>
+            <label>Student 3 <input type="checkbox" name="present[]" value="3"></label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

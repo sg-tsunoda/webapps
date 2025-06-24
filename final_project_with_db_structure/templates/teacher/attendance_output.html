@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6f0;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #b30000;
+        }
+        table {
+            width: 70%%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+        th {
+            background-color: #b30000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attendance Record</h1>
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Status</th>
+        </tr>
+        {% for entry in attendance %}
+        <tr>
+            <td>{{ entry.student_name }}</td>
+            <td>{{ entry.status }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

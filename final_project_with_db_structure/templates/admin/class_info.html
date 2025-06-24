@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Info Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #004d99;
+        }
+        table {
+            width: 80%%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #004d99;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Class Entries</h1>
+    <table>
+        <tr>
+            <th>Class</th>
+            <th>Teacher</th>
+            <th>Student</th>
+            <th>Timing</th>
+        </tr>
+        {% for entry in entries %}
+        <tr>
+            <td>{{ entry.class_name }}</td>
+            <td>{{ entry.teacher_name }}</td>
+            <td>{{ entry.student_name }}</td>
+            <td>{{ entry.class_timings }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Student</h2>
+        <form method="POST" action="/admin/add_student">
+            <input type="text" name="student_name" placeholder="Student Name"><br>
+            <select name="class_id">
+                <option value="1">Math1</option>
+                <option value="2">Statistics</option>
+                <option value="3">Computation</option>
+                <option value="4">Information Systems</option>
+            </select><br>
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+</body>
+</html>
